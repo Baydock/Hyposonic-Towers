@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyposonicTowers", "HyposonicTowers\HyposonicTowers.csproj", "{95A0994F-36F1-4F51-869E-5D1412BDEE5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95A0994F-36F1-4F51-869E-5D1412BDEE5D}.Debug|x64.ActiveCfg = Debug|x64
+		{95A0994F-36F1-4F51-869E-5D1412BDEE5D}.Debug|x64.Build.0 = Debug|x64
+		{95A0994F-36F1-4F51-869E-5D1412BDEE5D}.Release|x64.ActiveCfg = Release|x64
+		{95A0994F-36F1-4F51-869E-5D1412BDEE5D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEF4A5E4-BEC0-4DF2-8264-F0B08303E692}
+	EndGlobalSection
+EndGlobal
