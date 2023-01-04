@@ -35,7 +35,7 @@
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Copy SourceFiles="$(TargetPath)" DestinationFolder="D:\Games\steamapps\steamapps\common\BloonsTD6\Mods" />
-		<Message Text="$(TargetFileName) -> BloonsTD6/Mods" Importance="high" />
+		<Message Text="$(TargetFileName) -&gt; BloonsTD6/Mods" Importance="high" />
 	</Target>
 
 </Project>
