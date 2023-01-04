@@ -1,9 +1,10 @@
 ﻿using HarmonyLib;
 using Il2Cpp;
 using Il2CppAssets.Scripts.Models.Towers.Weapons;
+using Il2CppAssets.Scripts.Simulation.Bloons;
 using MelonLoader;
 
-[assembly: MelonInfo(typeof(HyposonicTowers.Mod), "Hyposonic Towers", "1.0.0", "Baydock")]
+[assembly: MelonInfo(typeof(HyposonicTowers.Mod), "Hyposonic Towers", "1.0.1", "Baydock")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 [assembly: MelonAuthorColor(255, 255, 104, 0)]
 
@@ -22,6 +23,13 @@ namespace HyposonicTowers {
             int end = start + count;
             for (int i = start; i < end; i++)
                 __instance.m[i].Cast<WeaponModel>().rate = 9999999;
+        }
+
+        [HarmonyPatch(typeof(Bloon), nameof(Bloon.Damage))]
+        [HarmonyPrefix]
+        public static bool Heheheha(ref float totalAmount) {
+            totalAmount = 0;
+            return true;
         }
     }
 }
